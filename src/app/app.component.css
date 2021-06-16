@@ -21,13 +21,7 @@ img {
 
 /********* Navigation **********/
 
-.navigation {
-    background: #242424;
-    color: #dfdfdf;
-    padding: 10px 0;
-    box-shadow: 0 0 10px #00245B;
-    position: relative;
-    z-index: 9;
+.navbar {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -41,38 +35,38 @@ img {
     }
 }
 
-.navigation a.navbar-brand svg {
+a.navbar-brand svg {
     height: 40px;
 }
 
-.navigation a.navbar-brand svg path {
+a.navbar-brand svg path {
     transition: all 0.3s ease-in-out;
 }
 
 
-/*.navigation a.navbar-brand:hover svg path {
+/* a.navbar-brand:hover svg path {
     fill: rgba(255, 255, 255, 0.81);
   }*/
 
-.navigation a.navbar-brand:hover {
+a.navbar-brand:hover {
     transform: rotate(45deg);
     transition: all 0.3s ease-in-out;
 }
 
-.navigation nav .nav-item {}
+nav .nav-item {}
 
-.navigation nav .nav-item .nav-link.btn {
-    color: #f7bc31;
+nav .nav-item .nav-link.btn {
+    color: #0589e0;
     font-size: 14px;
     transition: all 0.3s ease-in-out
 }
 
-.navigation nav .nav-item .nav-link.btn:hover {
+nav .nav-item .nav-link.btn:hover {
     font-weight: 400 !important;
     font-style: italic !important;
 }
 
-.navigation nav .nav-item .nav-link {
+nav .nav-item .nav-link {
     color: #C2CEE1;
     padding: 5px 20px;
     font-size: 15px;
@@ -80,9 +74,9 @@ img {
     letter-spacing: 1px;
 }
 
-.navigation nav .nav-item .nav-link:hover,
-.navigation nav .nav-item .nav-link.active {
-    color: #f7bc31;
+nav .nav-item .nav-link:hover,
+nav .nav-item .nav-link.active {
+    color: #318df7;
     font-weight: 700;
     font-style: italic;
 }
@@ -166,7 +160,7 @@ img {
 
 .navbar-collapse.show {
     margin-top: 15px;
-    border-top: solid 1px #20488f;
+    border-top: solid 1px #a8a8a8;
     transition: all 0.3s ease-in;
 }
 
