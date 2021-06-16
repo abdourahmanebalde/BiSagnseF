@@ -1,0 +1,22 @@
+/* input {
+    height: 29px !important;
+    width: 155px !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2)!important;
+    background: rgba(53, 52, 52, 0.5)!important;
+} */
+
+button {
+    border-radius: 20px !important;
+    height: 30px;
+}
+
+img {
+    width: 60px !important;
+    margin-top: -80px !important;
+    margin-bottom: -85px !important;
+}
+
+a :hover {
+    color: #fff !important;
+}

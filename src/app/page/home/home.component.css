@@ -1,0 +1,11 @@
+.grid {
+    line-height: 30px;
+    column-count: 3;
+}
+
+.grid img {
+    width: 100% !important;
+    height: auto !important;
+    padding: 7px 0;
+    transition: transform 0.3s ease-out;
+}
