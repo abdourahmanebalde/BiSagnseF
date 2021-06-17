@@ -69,6 +69,14 @@ button {
     text-decoration: none;
 }
 
+form {
+    /* display: block; */
+    float: right;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
 
 /* menu */
 

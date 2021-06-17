@@ -42,7 +42,7 @@
 
 <header class="header">
     <div class="row">
-        <div class="col-md-7 offset-4">
+        <div class="col-md-7">
             <a href="" class="logo">Bii Sagnsei</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -51,9 +51,16 @@
                 <li><a href="#about">Femmes</a></li>
                 <li><a href="#careers">Enfants</a></li>
             </ul>
-            <li><button class="btn btn-primary btn-sm" href="#">Login</button></li>
-            <li><button class="" href="#">Join</button></li>
+            <div class="col-md-10 offset-md-3 float-md-right">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Email" />
+                    <input class="form-control me-2" type="password" placeholder="Mots de passe" />
+                    <button class="btn btn-primary btn-sm" type="submit">Connecter</button>
+                    <a class="btn btn-link" href="#">S'incrire</a>
+                </form>
+            </div>
         </div>
+
     </div>
 </header>
 
