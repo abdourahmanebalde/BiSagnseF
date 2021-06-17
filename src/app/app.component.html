@@ -35,44 +35,22 @@
 </div> -->
 
 
-<nav>
-    <div class="logo">
-        <img src="logo.svg" alt="Logo Image">
-    </div>
-    <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Solutions</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact Us</a></li>
+<!-- <nav>
         <li><button class="login-button" href="#">Login</button></li>
         <li><button class="join-button" href="#">Join</button></li>
+</nav> -->
+
+<header class="header">
+    <a href="" class="logo">CSS Nav</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
-
-<script>
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
-    const links = document.querySelectorAll(".nav-links li");
-
-    hamburger.addEventListener('click', () => {
-        //Animate Links
-        navLinks.classList.toggle("open");
-        links.forEach(link => {
-            link.classList.toggle("fade");
-        });
-
-        //Hamburger Animation
-        hamburger.classList.toggle("toggle");
-    });
-</script>
-
-
+</header>
 
 
 
