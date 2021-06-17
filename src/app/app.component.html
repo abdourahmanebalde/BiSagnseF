@@ -35,39 +35,42 @@
 </div> -->
 
 
-<nav class="navbar sticky-top navbar-expand-md bg-dark">
-    <a class="navbar-brand" routerLink="">
-
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-bar"></span>
-        <span class="navbar-toggler-bar"></span>
-        <span class="navbar-toggler-bar"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav align-items-center">
-            <li class="nav-item ml-5">
-                <a class="nav-link" routerLink="/">How it works</a>
-            </li>
-            <li class="nav-item ml-5">
-                <a class="nav-link" routerLink="/">Pricing</a>
-            </li>
-
-            <li class="nav-item ml-5">
-                <a class="nav-link " routerLink="/">Reports</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto align-items-center">
-            <li class="nav-item nav-login">
-                <a class="nav-link" href="">Log in</a>
-            </li>
-            <li class="nav-item ml-3">
-                <a class="nav-link btn btn-outline-secondary btn-effect-1" href="">Try for free</a>
-            </li>
-        </ul>
+<nav>
+    <div class="logo">
+        <img src="logo.svg" alt="Logo Image">
     </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><button class="login-button" href="#">Login</button></li>
+        <li><button class="join-button" href="#">Join</button></li>
+    </ul>
 </nav>
 
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+
+    hamburger.addEventListener('click', () => {
+        //Animate Links
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle("fade");
+        });
+
+        //Hamburger Animation
+        hamburger.classList.toggle("toggle");
+    });
+</script>
 
 
 

@@ -21,158 +21,199 @@ img {
 
 /********* Navigation **********/
 
-.navbar {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-@keyframes smoothScroll {
-    0% {
-        transform: translateY(-90px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-a.navbar-brand svg {
-    height: 40px;
-}
-
-a.navbar-brand svg path {
-    transition: all 0.3s ease-in-out;
+nav {
+    height: 6rem;
+    width: 100vw;
+    background-color: #131418;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
 }
 
 
-/* a.navbar-brand:hover svg path {
-    fill: rgba(255, 255, 255, 0.81);
-  }*/
+/*Styling logo*/
 
-a.navbar-brand:hover {
-    transform: rotate(45deg);
-    transition: all 0.3s ease-in-out;
-}
-
-nav .nav-item {}
-
-nav .nav-item .nav-link.btn {
-    color: #0589e0;
-    font-size: 14px;
-    transition: all 0.3s ease-in-out
-}
-
-nav .nav-item .nav-link.btn:hover {
-    font-weight: 400 !important;
-    font-style: italic !important;
-}
-
-nav .nav-item .nav-link {
-    color: #C2CEE1;
-    padding: 5px 20px;
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-nav .nav-item .nav-link:hover,
-nav .nav-item .nav-link.active {
-    color: #318df7;
-    font-weight: 700;
-    font-style: italic;
-}
-
-@media all and (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        opacity: 0;
-        visibility: hidden;
-        transition: .3s;
-        margin-top: 0;
-    }
-    .navbar-nav .nav-login {
-        padding-left: 40px;
-    }
-    .navbar .nav-item:hover .nav-link {
-        color: #fff;
-    }
-    .navbar .dropdown-menu.fade-down {
-        top: 80%;
-        transform: rotateX(-75deg);
-        transform-origin: 0% 0%;
-    }
-    .navbar .dropdown-menu.fade-up {
-        top: 180%;
-    }
-    .navbar .nav-item:hover .dropdown-menu {
-        transition: .3s;
-        opacity: 1;
-        visibility: visible;
-        top: 100%;
-        transform: rotateX(0deg);
-    }
-}
-
-@media all and (max-width: 767px) {
-    .navbar-toggler {
-        position: absolute;
-    }
-    a.navbar-brand {
-        margin: auto;
-    }
-    .navbar-nav .nav-login {
-        padding-left: 40px;
-    }
-}
-
-.navbar .nav-item .dropdown-menu {
-    background: #00245B;
-    color: #fff;
-    border-radius: 0;
+.logo {
+    padding: 1vh 1vw;
     text-align: center;
 }
 
-.navbar .nav-item .dropdown-menu .dropdown-item {
-    background: transparent;
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-    font-weight: 300;
-    font-size: 14px;
+.logo img {
+    height: 5rem;
+    width: 5rem;
 }
 
-.navbar .nav-item .dropdown-menu .dropdown-item:hover {
-    color: #f7bc31;
+
+/*Styling Links*/
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
 }
 
-.navbar-toggler {
-    padding: 0;
-    background: transparent;
-    position: absolute;
-    top: 20px;
+.nav-links li a {
+    text-decoration: none;
+    margin: 0 0.7vw;
 }
 
-.navbar-toggler .navbar-toggler-bar {
-    background: #C2CEE1;
-    width: 25px;
-    height: 2px;
-    margin: 5px 0;
+.nav-links li a:hover {
+    color: #61DAFB;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a::before {
+    content: "";
     display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #61DAFB;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
 }
 
-.navbar-collapse.show {
-    margin-top: 15px;
-    border-top: solid 1px #a8a8a8;
-    transition: all 0.3s ease-in;
+.nav-links li a:hover::before {
+    width: 80%;
 }
 
-.navbar-collapse.show .nav-link {
-    padding: 8px 20px !important;
-    transition: all 0.3s ease-in;
+
+/*Styling Buttons*/
+
+.login-button {
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-.navbar-collapse.show .nav-link.btn {
-    margin-top: 15px !important;
+.login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border: 1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
 }
 
-.test {
-    color: #fff;
+.join-button {
+    color: #131418;
+    background-color: #61DAFB;
+    border: 1.5px solid #61DAFB;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    color: #f2f5f7;
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+
+/*Styling Hamburger Icon*/
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+/*Stying for small screens*/
+
+@media screen and (max-width: 800px) {
+    nav {
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links {
+        position: fixed;
+        background: #131418;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade {
+        opacity: 1;
+    }
+}
+
+
+/*Animating Hamburger Icon on Click*/
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
