@@ -21,14 +21,16 @@ img {
 
 /********* Navigation **********/
 
-a {
+
+/* a {
     color: rgb(255, 255, 255);
-}
+} */
 
 
 /* header */
 
-button {
+
+/* button {
     border-radius: 20px !important;
     height: 30px;
 }
@@ -69,14 +71,9 @@ button {
     text-decoration: none;
 }
 
-.btn-nav {
-    padding-right: 565px;
-}
-
-
-/* form {
+.header .btn-form {
     display: block;
-    float: left;
+    float: right;
     font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
@@ -85,16 +82,18 @@ button {
 
 /* menu */
 
-.header .menu {
-    padding-right: 565px;
+
+/* .header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
-}
+} */
 
 
 /* menu icon */
 
+
+/* 
 .header .menu-icon {
     cursor: pointer;
     display: inline-block;
@@ -130,12 +129,13 @@ button {
 
 .header .menu-icon .navicon:after {
     top: -5px;
-}
+} */
 
 
 /* menu btn */
 
-.header .menu-btn {
+
+/* .header .menu-btn {
     display: none;
 }
 
@@ -158,12 +158,13 @@ button {
 .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     top: 0;
-}
+} */
 
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+
+/* @media (min-width: 48em) {
     .header li {
         float: left;
     }
@@ -178,4 +179,4 @@ button {
     .header .menu-icon {
         display: none;
     }
-}
+} */
