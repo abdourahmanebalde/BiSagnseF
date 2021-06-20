@@ -188,6 +188,7 @@ img {
 }
 
 .navbar {
+    z-index: 10;
     background: #fff;
     padding-left: 16px;
     padding-right: 16px;
@@ -211,7 +212,7 @@ img {
 }
 
 .navbar .navbar-brand b {
-    color: #33cabb;
+    color: #4284ff;
 }
 
 .navbar .form-inline {
@@ -298,14 +299,14 @@ img {
 .navbar .btn-primary,
 .navbar .btn-primary:active {
     color: #fff;
-    background: #33cabb !important;
+    background: #4284ff !important;
     border: none;
 }
 
 .navbar .btn-primary:hover,
 .navbar .btn-primary:focus {
     color: #fff;
-    background: #31bfb1 !important;
+    background: #4284ff !important;
 }
 
 .navbar .social-btn .btn,

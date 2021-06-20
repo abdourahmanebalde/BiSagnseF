@@ -9,6 +9,7 @@ import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 import { ConnexionComponent } from './page/connexion/connexion.component';
 import { InscriptionComponent } from './page/inscription/inscription.component';
 import { ProfileComponent } from './page/profile/profile.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ProfileComponent } from './page/profile/profile.component';
     HomeComponent,
     ConnexionComponent,
     InscriptionComponent,
-    ProfileComponent
+    ProfileComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

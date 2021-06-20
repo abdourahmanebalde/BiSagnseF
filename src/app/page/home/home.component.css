@@ -1,6 +1,7 @@
 .grid {
     line-height: 30px;
     column-count: 3;
+    padding: 15px;
 }
 
 .grid img {
