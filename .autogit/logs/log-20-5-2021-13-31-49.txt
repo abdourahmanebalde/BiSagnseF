@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jun 20 2021 13:31:49 GMT+0000 (Greenwich Mean Time)
+------------------------------------------------------
+
+Modified files:
+* angular.json
+* src/app/page/profile/profile.component.css
+* src/app/page/profile/profile.component.html
+
+
+Created files:
+* .autogit/logs/log-20-5-2021-3-57-12.txt
+
+
+Deleted files:
+
+
+Renamed files:
