@@ -2,35 +2,42 @@
 
     <div class="wrapper">
         <div class="inner">
-            <div class="image-holder">
-                <img src="../../../assets/images/imageformulaire.png" alt="">
-            </div>
-            <form action="">
-                <h3> Connexion</h3>
-                <div class="">
-                    <div class="form-holder">
-                        <input type="text" placeholder="Adresse" class="form-control">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="image-holder">
+                            <img src="../../../assets/images/imageformulaire.png" alt="">
+                        </div>
                     </div>
+                    <div class="col-md-5">
+                        <form action="">
+                            <h3> Connexion</h3>
+                            <div class="">
+                                <div class="form-holder">
+                                    <input type="text" placeholder="Adresse" class="form-control">
+                                </div>
 
-                    <div class="form-holder ">
-                        <input type="password" placeholder="Mot de passe" class="form-control">
-                    </div>
+                                <div class="form-holder ">
+                                    <input type="password" placeholder="Mot de passe" class="form-control">
+                                </div>
 
-                </div>
-                <div class="checkbox">
-                    <label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
           <input type="checkbox" checked> Garder ma session active
           <span class="checkmark"></span>
         </label>
+                            </div>
+                            <div class="form-login">
+                                <button>Connexion</button>
+                                <p>Vous n'avez pas un compte? <a href="#">S'incrire</a></p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-login">
-                    <button>Connexion</button>
-                    <p>Vous n'avez pas un compte? <a href="#">S'incrire</a></p>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
 </body>

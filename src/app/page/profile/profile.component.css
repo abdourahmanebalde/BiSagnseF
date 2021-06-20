@@ -67,6 +67,7 @@ h5 {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     width: 0;
+    z-index: 5;
 }
 
 .icon-button:hover span {
@@ -111,15 +112,15 @@ h5 {
     z-index: 10;
 }
 
-.icon-button .fa fa-twitter {
+.icon-button .fa-twitter {
     color: #4099ff;
 }
 
-.icon-button .fa fa-facebook {
+.icon-button .fa-facebook {
     color: #3B5998;
 }
 
-.icon-button .fa fa-pinterest {
+.icon-button .fa-pinterest {
     color: #db5a3c;
 }
 
@@ -127,9 +128,9 @@ h5 {
     color: #405DE6;
 }
 
-.icon-button:hover .fa fa-twitter,
-.icon-button:hover .fa fa-facebook,
-.icon-button:hover .fa fa-pinterest,
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-pinterest,
 .icon-button:hover .fa-instagram {
     color: white;
 }
