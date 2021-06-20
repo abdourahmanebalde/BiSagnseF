@@ -5,7 +5,7 @@
     "projects": {
         "bisagnse-front": {
             "projectType": "application",
-            "schematics": {},
+            "schematics": { "@schematics/angular:component": { "style": "scss" } },
             "root": "",
             "sourceRoot": "src",
             "prefix": "app",
@@ -90,7 +90,9 @@
                             "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
                             "src/styles.css"
                         ],
-                        "scripts": ["node_modules/jquery/dist/jquery.min.js"]
+                        "scripts": [
+                            "node_modules/jquery/dist/jquery.min.js"
+                        ]
                     }
                 },
                 "lint": {
@@ -124,5 +126,10 @@
     "defaultProject": "bisagnse-front",
     "cli": {
         "analytics": false
+    },
+    "schematics": {
+        "@schematics/angular:component": {
+            "styleext": "scss"
+        }
     }
 }
