@@ -50,7 +50,7 @@ a:hover {
     /* min-height: 100vh; */
     /* display: flex; */
     align-items: center;
-    background-color: #dde9ff;
+    background-color: #ffffff;
     /* background-size: cover; */
 }
 
@@ -137,28 +137,28 @@ h3 {
 
 .form-control::-webkit-input-placeholder {
     font-size: 13px;
-    color: #808080;
+    color: #afafaf;
     text-transform: uppercase;
     font-family: "Montserrat-Regular";
 }
 
 .form-control::-moz-placeholder {
     font-size: 13px;
-    color: #808080;
+    color: #afafaf;
     text-transform: uppercase;
     font-family: "Montserrat-Regular";
 }
 
 .form-control:-ms-input-placeholder {
     font-size: 13px;
-    color: #808080;
+    color: #afafaf;
     text-transform: uppercase;
     font-family: "Montserrat-Regular";
 }
 
 .form-control:-moz-placeholder {
     font-size: 13px;
-    color: #808080;
+    color: #afafaf;
     text-transform: uppercase;
     font-family: "Montserrat-Regular";
 }
@@ -230,7 +230,7 @@ button {
     justify-content: center;
     padding: 0;
     background: #4680ff;
-    font-size: 15px;
+    font-size: 10px;
     color: #fff;
     text-transform: uppercase;
     font-family: "Montserrat-SemiBold";
