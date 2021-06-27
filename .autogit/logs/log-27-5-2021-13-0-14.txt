@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jun 27 2021 13:00:14 GMT+0000 (Greenwich Mean Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.html
+* src/app/page/connexion/connexion.component.css
+* src/app/page/connexion/connexion.component.html
+* src/app/page/inscription/inscription.component.html
+
+
+Created files:
+* .autogit/logs/log-27-5-2021-12-30-5.txt
+
+
+Deleted files:
+
+
+Renamed files:
